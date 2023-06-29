@@ -1,0 +1,32 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+    background-color: var(--color-purple);
+    color: var(--color-pink);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    padding: 20px 0;
+    background-color: var(--color-purple);
+    color: var(--color-pink);
+}
+
+.footer {
+    padding: 20px 0;
+    background-color: var(--color-purple);
+    color: var(--color-pink);
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 30px;
+    }
+}
