@@ -1,18 +1,32 @@
-@import 'tailwind.css';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 body {
-    background-color: #1A202C;
-    color: #A0AEC0;
+    background-color: var(--color-purple);
+    color: var(--color-pink);
 }
 
-#header {
-    @apply text-3xl font-bold;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-#main-content {
-    @apply text-lg;
+.header {
+    padding: 20px 0;
+    background-color: var(--color-purple);
+    color: var(--color-pink);
 }
 
-#footer {
-    @apply text-sm;
+.footer {
+    padding: 20px 0;
+    background-color: var(--color-purple);
+    color: var(--color-pink);
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 30px;
+    }
 }
