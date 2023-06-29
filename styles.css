@@ -1,0 +1,18 @@
+@import 'tailwind.css';
+
+body {
+    background-color: #1A202C;
+    color: #A0AEC0;
+}
+
+#header {
+    @apply text-3xl font-bold;
+}
+
+#main-content {
+    @apply text-lg;
+}
+
+#footer {
+    @apply text-sm;
+}
